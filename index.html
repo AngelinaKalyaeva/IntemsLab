@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intems Lab</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light navbar-toggleable">
+        <div class="container">
+                    <div class="navbar-brand"><img src="img/logo.png"></div>
+                <div class="d-block d-sm-block d-md-none"><img src="img/iconsPhone.png"></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="fa fa-reorder"></span>
+                </button>
+
+                <div class="col-md-6">
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav topnav">
+                            <li class="nav-item">
+                                <a href="#about-us" class="nav-link">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">Услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#work-stages" class="nav-link">Этапы работы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#clients" class="nav-link">Клиенты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#feedback" class="nav-link">Отзывы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <div class="d-none d-sm-none d-md-block">
+                    <div class="row">
+                        <div class="col-md-2"><img src="img/iconsPhone.png"></div>
+                        <div class="col-md-10 phone">+7 921 646 00 99</div>
+                    </div>
+                    </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <h1 class="page-header">Разработка программного обеспечения</h1>
+                    <h2>Бесплатная консультация от наших специалистов</h2>
+                    <form action="https://postmail.invotes.com/send"
+                          method="post" id="email_form">
+                        <input type="hidden" name="subject" value="Заявка с сайта Intems Lab." />
+                        <input class="validation" type="tel" name="text" placeholder="Ваш телефон" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$">
+                        <input type="hidden" name="access_token" value="4lqsmx5qhdtfvna9zhd8lkez" />
+                        <input type="hidden" name="success_url" value="https://angelinakalyaeva.github.io/" />
+                        <input type="hidden" name="error_url" value="https://angelinakalyaeva.github.io/" />
+                        <div class="clearfix">
+                            <input id="submit_form" type="submit" value="Оставить заявку" />
+                        </div>
+                    </form>
+                     <script>
+                        var submitButton = document.getElementById("submit_form");
+                        var form = document.getElementById("email_form");
+                        form.addEventListener("submit", function (e) {
+                            setTimeout(function() {
+                                submitButton.value = "Отправка...";
+                                submitButton.disabled = true;
+                            }, 1);
+                        });
+                    </script>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <img src="img/mainImg.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us" id="about-us">
+        <div class="container">
+            <h1>О нас</h1>
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <img src="img/image1.png" class="img-fluid">
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="text">
+                        <p>
+                            Разнообразный и богатый опыт сложившаяся структура организации позволяет оценить значение
+                            модели развития. Товарищи! новая модель организационной деятельности представляет собой
+                            интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
+                            Разнообразный и богатый опыт укрепление и развитие структуры требуют от нас анализа форм развития.
+                        </p>
+                        <p>
+                            Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности в
+                            значительной степени обуславливает создание форм развития. Идейные соображения высшего
+                            порядка, а также сложившаяся структура организации в значительной степени обуславливает создание
+                            новых предложений. Задача организации, в особенности же укрепление и развитие структуры
+                            позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1>Услуги</h1>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top card-img-1" src="img/image2.png">
+                        <div class="card-body">
+                            <h2 class="card-title">Электронные устройства</h2>
+                            <p>Прототипирование и разработка электроники, электронных устройств</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top card-img-2" src="img/image3.png">
+                        <div class="card-body">
+                            <h2 class="card-title">Программное обеспечение</h2>
+                            <p>Разработка программного обеспечения с использованием современных технологий</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top card-img-3" src="img/image4.png">
+                        <div class="card-body">
+                            <h2 class="card-title">Лабораторные комплексы</h2>
+                            <p>Проектирование и автоматизация лабораторных комплексов, установка и сопровождение</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-four">
+                        <img class="card-img-top card-img-4" src="img/image5.png">
+                        <div class="card-body">
+                            <h2 class="card-title">Инженерия</h2>
+                            <p>Программная и техническая: сложные инженерно-технические задачи от идеи до законченного проекта</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="image d-none d-sm-none d-md-block">
+                            <img src="img/image6.png">
+                        </div>
+                    </div>
+                    <div class="col-md-11">
+                        <h2>Оставьте заявку и наш специалист позвонит вам в рабочее время</h2>
+                        <div class="content">
+                            <div class="d-none d-sm-none d-md-block">
+                                <img  src="img/vector.png">
+                            </div>
+                            <form action="https://postmail.invotes.com/send"
+                                  method="post" id="email_form_1">
+                                <input type="hidden" name="subject" value="Заявка с сайта Intems Lab." />
+                                <input class="validation" type="tel" name="text" placeholder="Ваш телефон" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$">
+                                <input type="hidden" name="access_token" value="4lqsmx5qhdtfvna9zhd8lkez" />
+                                <input type="hidden" name="success_url" value="https://angelinakalyaeva.github.io/" />
+                                <input type="hidden" name="error_url" value="https://angelinakalyaeva.github.io/" />
+                                <input id="submit_form_1" type="submit" value="Оставить заявку" />
+                                <p>Нажимая кнопку, <u>я даю согласие на обработку персональных данных</u></p>
+                            </form>
+
+                            <script>
+                                var submitButton = document.getElementById("submit_form_1");
+                                var form = document.getElementById("email_form_1");
+                                form.addEventListener("submit", function (e) {
+                                    setTimeout(function() {
+                                        submitButton.value = "Отправка...";
+                                        submitButton.disabled = true;
+                                    }, 1);
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-stages" id="work-stages">
+        <div class="container">
+            <h1>Этапы работы</h1>
+            <div class="d-none d-sm-none d-md-block">
+                <img class="img-fluid" src="img/image8.png">
+            </div>
+            <div class="d-block d-sm-block d-md-none">
+                <img class="img-fluid" src="img/image7.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="container">
+            <h1>Готовые продукты</h1>
+            <div id="accordion">
+                <div class="card border border-left-0 border-right-0 border-bottom-0 rounded-0">
+                    <div class="card-header" id="headingOne">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Cashless 2.0</h2>
+                            </div>
+                            <div class="col-6">
+                                <button id ="buttonOne" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="fa fa-minus"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 order-sm-first order-last">
+                                    <img class="img-fluid img-1" src="img/image9.png">
+                                </div>
+                                <div class="col-sm-6 order-sm-last order-first">
+                                    <h2 class="card-body-h2-1">Устройство безналичной оплаты для вендинговых аппаратов v2.0 с возможностью автономного функционирования.</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    <img class="img-fluid img-2" src="img/image10.png">
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <img class="img-fluid img-3" src="img/image11.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $(function() {
+                        $('#collapseOne').on('hide.bs.collapse', function () {
+                            $('#buttonOne').html('<span class="fa fa-plus"></span>');
+                        });
+                        $('#collapseOne').on('show.bs.collapse', function () {
+                            $('#buttonOne').html('<span class="fa fa-minus"></span>');
+                        });
+                    });
+                </script>
+
+                <div class="card border border-left-0 border-right-0 border-bottom-0 rounded-0">
+                    <div class="card-header" id="headingTwo">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Щелочной блок</h2>
+                            </div>
+                            <div class="col-6">
+                                <button id ="buttonTwo" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                                    <span class="fa fa-plus"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 order-sm-first order-last">
+                                    <img class="img-fluid img-1" src="img/image12.png">
+                                </div>
+                                <div class="col-sm-6 order-sm-last order-first">
+                                    <h2 class="card-body-h2-2">Лабораторный комплекс для исследований в области получения технологического глинозёма из различных видов бокситов. Контроль и поддержание параметров реакции в автоматическом режиме.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $(function() {
+                        $('#collapseTwo').on('hide.bs.collapse', function () {
+                            $('#buttonTwo').html('<span class="fa fa-plus"></span>');
+                        });
+                        $('#collapseTwo').on('show.bs.collapse', function () {
+                            $('#buttonTwo').html('<span class="fa fa-minus"></span>');
+                        });
+                    });
+                </script>
+
+                <div class="card border border-left-0 border-right-0 border-bottom-0 rounded-0">
+                    <div class="card-header" id="headingThree">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Hot lift</h2>
+                            </div>
+                            <div class="col-6">
+                                <button id ="buttonThree" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                                    <span class="fa fa-plus"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="collapse">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 class="card-body-h2-3">Прецизионный подъёмный механизм для лабораторной варочной печи с электронным управлением.</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-lg-4">
+                                    <img class="img-fluid img-1" src="img/image13.png">
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <img class="img-fluid" src="img/image14.png">
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <img class="img-fluid" src="img/image15.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $(function() {
+                        $('#collapseThree').on('hide.bs.collapse', function () {
+                            $('#buttonThree').html('<span class="fa fa-plus"></span>');
+                        });
+                        $('#collapseThree').on('show.bs.collapse', function () {
+                            $('#buttonThree').html('<span class="fa fa-minus"></span>');
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="clients" id="clients">
+        <div class="container">
+            <h1>Клиенты</h1>
+            <div id="carouselReviews" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselReviews" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselReviews" data-slide-to="1"></li>
+                <li data-target="#carouselReviews" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="offset-sm-2 col-sm-3 col-md-2">
+                            <img src="img/img16.png" class="img-fluid img-1"></div>
+                        <div class="offset-md-1 col-md-5 col-sm-5">
+                            <div class="review">
+                                <h2>Компания</h2>
+                                <p>«Vendex Retail»</p>
+                                <h2>Готовый продукт</h2>
+                                <p class="last">Система безналичной оплаты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="offset-sm-2 col-sm-3 col-md-2">
+                            <img src="img/image17.png" class="img-fluid img-2"></div>
+                        <div class="offset-md-1 col-md-5 col-sm-5">
+                            <div class="review">
+                                <h2>Компания</h2>
+                                <p>НИИ Нанофотоники СПб</p>
+                                <h2>Готовый продукт</h2>
+                                <p class="last">Прецизионная установка подачи тигля</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="offset-sm-2 col-sm-3 col-md-2">
+                            <img src="img/img18.png" class="img-fluid img-3"></div>
+                        <div class="offset-md-1 col-md-5 col-sm-5">
+                            <div class="review">
+                                <h2>Компания</h2>
+                                <p>«Русал Вами»</p>
+                                <h2>Готовый продукт</h2>
+                                <p class="last">Автоматизированный щелочной блок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="offset-sm-2 col-sm-3 col-md-2">
+                            <img src="img/img19.png" class="img-fluid img-4"></div>
+                        <div class="offset-md-1 col-md-5 col-sm-5">
+                            <div class="review">
+                                <h2>Компания</h2>
+                                <p>ИМИС ЭКСПО</p>
+                                <h2>Готовый продукт</h2>
+                                <p class="last">Система контроля посетителей</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="offset-sm-2 col-sm-3 col-md-2">
+                            <img src="img/img20.png" class="img-fluid img-5"></div>
+                        <div class="offset-md-1 col-md-5 col-sm-5">
+                            <div class="review">
+                                <h2>Компания</h2>
+                                <p>«СМАРКЛ»</p>
+                                <h2>Готовый продукт</h2>
+                                <p class="last">ПО контроля кранового комплекса</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselReviews" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselReviews" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <div class="feedback" id="feedback">
+        <div class="container">
+            <h1>Отзывы</h1>
+            <div class="feedback-item">
+               <div class="row">
+                   <div class="col-4 col-md-3">
+                       <img src="img/image22.png" class="block1">
+                   </div>
+                   <div class="col-8 col-md-3 block2">
+                       <p>Станислав Цешкин</p>
+                   </div>
+                   <div class="offset-4 col-8 col-md-3 offset-md-3 block3">
+                       <p>ИМИС ЭКСПО</p>
+                   </div>
+                   <div class="col-12 offset-md-3 col-md-7 block4">
+                       <p>Заказывали услуги у компании «IntemsLab» несколько раз (оборудование по контролю доступа людей на мероприятие).Все прошло отлично, никаких нареканий. Ребята молодцы! Планируем и дальше работать с этой компанией.</p>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1>Остались вопросы?</h1>
+                    <form action="https://postmail.invotes.com/send"
+                          method="post" id="email_form_2">
+                        <p>Оставьте заявку, и наш консультант перезвонит вам!</p>
+                        <input type="hidden" name="subject" value="Заявка с сайта Intems Lab." />
+                        <input class="validation" type="tel" name="text" placeholder="Ваш телефон" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$">
+                        <input type="hidden" name="access_token" value="4lqsmx5qhdtfvna9zhd8lkez" />
+                        <input type="hidden" name="success_url" value="https://angelinakalyaeva.github.io/" />
+                        <input type="hidden" name="error_url" value="https://angelinakalyaeva.github.io/" />
+                        <input id="submit_form_2" type="submit" value="Оставить заявку" />
+                        <p class="text">Нажимая на кнопку, я даю согласие <br><u>на обработку персональных данных</u></p>
+                    </form>
+
+                    <script>
+                        var submitButton = document.getElementById("submit_form_2");
+                        var form = document.getElementById("email_form_2");
+                        form.addEventListener("submit", function (e) {
+                            setTimeout(function() {
+                                submitButton.value = "Отправка...";
+                                submitButton.disabled = true;
+                            }, 1);
+                        });
+                    </script>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="map">
+                        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                            <script>(function () {
+                                var setting = {"height":382,"width":613,"zoom":15,"queryString":"площадь Морской Славы, 1, Санкт-Петербург, Россия","place_id":"ChIJHSc9iMswlkYR_87LwrZsCC8","satellite":false,"centerCoord":[59.9258559470192,30.236790003666883],"cid":"0x2f086cb6c2cbceff","lang":"ru","cityUrl":"/russia/saint-petersburg","cityAnchorText":"Карта [CITY1], Северо-Западный регион, Россия","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"189103"};
+                                var d = document;
+                                var s = d.createElement('script');
+                                s.src = 'https://embedgooglemap.1map.com/js/script-for-user.js?embed_id=189103';
+                                s.async = true;
+                                s.onload = function (e) {
+                                    window.OneMap.initMap(setting)
+                                };
+                                var to = d.getElementsByTagName('script')[0];
+                                to.parentNode.insertBefore(s, to);
+                            })();</script>
+                            <a href="https://embedgooglemap.1map.com/ru?embed_id=189103">1 Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <img src="img/logo2.png">
+                </div>
+                <div class="col-md-3 d-none d-sm-none d-md-block">
+                    <ul>
+                        <li>
+                            <a href="#about-us">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#services">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#work-stages">Этапы работы</a>
+                        </li>
+                        <li>
+                            <a href="#clients">Клиенты</a>
+                        </li>
+                        <li>
+                            <a href="#feedback">Отзывы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 offset-md-1 col-md-5">
+                    <table>
+                        <tr>
+                            <td class="left">Режим работы:</td>
+                            <td class="right">Пн-Пт | с 10:00 до 18:00</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Телефон:</td>
+                            <td class="right">+7 921 646 00 99</td>
+                        </tr>
+                        <tr>
+                            <td class="left">E-Mail:</td>
+                            <td class="right">chernokulsky@intemslab.ru</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Адрес:</td>
+                            <td class="right">Санкт Петербург,пл. Морской славы,1</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 d-none d-sm-none d-md-block">ООО «Интемс Лаб»</div>
+                    <div class="offset-md-1 col-md-3 d-none d-sm-none d-md-block">Политика конфиденциальности</div>
+                    <div class="offset-md-1 col-md-3 d-none d-sm-none d-md-block">Пользовательское соглашение</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
